@@ -1,12 +1,16 @@
-import express from 'express'
-import path from "node:path";
-import {routes} from "./src/routes/routes.js";
+require('dotenv').config();
+const express = require('express');
+const path = require("node:path");
+const routes = require("./src/routes/routes.js");
+const cors = require('./src/middlewares/cors');
 
-console.log("###", process.env.PORT)
-const app = express()
-const port = process.env.PORT ?? 3000
+console.log("###", process.env.PORT);
+const app = express();
+const port = process.env.PORT ?? 3000;
 
-app.use(express.static(path.join('public')));
+app.use('/', express.static('./src/public'));
+
+app.use(cors);
 
 routes(app);
 

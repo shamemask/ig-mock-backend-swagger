@@ -1,6 +1,6 @@
 const baseUrl = "/files-pdf/socialnoe-obsluzhivanie";
 
-export const socialService = [
+const socialService = [
   {
     title: "Перечень социальных услуг и тарифы",
     path: `${baseUrl}/perechecn-socialnih-uslug-i-tarifi.pdf`,
@@ -18,3 +18,5 @@ export const socialService = [
     path: `${baseUrl}/poryadok-predostavleniya-socialnih-uslug-v-polustacionarnoi-forme.pdf`,
   },
 ];
+
+module.exports = socialService;

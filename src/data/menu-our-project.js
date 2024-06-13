@@ -1,4 +1,4 @@
-export const projectList = [
+const projectList = [
   {
     title: "Школа сопровождаемого проживания",
     link: "/nashi-proekti/shkola-soprovozhdaemogo-prozhivaniya",
@@ -17,3 +17,5 @@ export const projectList = [
   },
   { title: "Выездные программы", link: "/nashi-proekti/viezdnye-programmy" },
 ];
+
+module.exports = projectList;

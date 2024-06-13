@@ -1,8 +1,14 @@
-export const socialLinks = [
+const socialLinks = [
   {
-    imageUrl: "/images/social-links/telegram-logo.svg",
+    imageUrl: "images/social-links/telegram-logo.svg",
     name: "Telegram",
     link: "t.com",
   },
-  { imageUrl: "/images/social-links/vk-logo.svg", name: "VK", link: "vk.com" },
+  {
+    imageUrl: "images/social-links/vk-logo.svg",
+    name: "VK",
+    link: "vk.com",
+  },
 ];
+
+module.exports = socialLinks;

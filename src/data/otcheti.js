@@ -1,6 +1,6 @@
 const baseUrl = "/files-pdf/otcheti";
 
-export const reports = [
+const reports = [
   {
     title: "Отчёт 2022",
     path: `${baseUrl}/otcheti.pdf`,
@@ -34,3 +34,5 @@ export const reports = [
     path: `${baseUrl}/otcheti.pdf`,
   },
 ];
+
+module.exports = reports;

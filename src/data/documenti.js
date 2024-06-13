@@ -1,6 +1,6 @@
 const baseUrl = "/files-pdf/documents";
 
-export const documents = [
+const documents = [
   {
     title: "Свидетельство о регистрации НКО",
     path: `${baseUrl}/svidetelstvo-o-registracii-nko.pdf`,
@@ -30,3 +30,5 @@ export const documents = [
     path: `${baseUrl}/predpisaniya-nadzornih-organov.pdf`,
   },
 ];
+
+module.exports = documents;

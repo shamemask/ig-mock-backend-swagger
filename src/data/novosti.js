@@ -1,4 +1,4 @@
-export const news = [
+const news = [
   {
     id: "1",
     image: "/images/novosti/news-lekcii.png",
@@ -264,3 +264,5 @@ export const news = [
     },
   },
 ];
+
+module.exports = news;

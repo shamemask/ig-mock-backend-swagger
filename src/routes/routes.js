@@ -1,20 +1,30 @@
-import { documents } from "../data/documenti.js";
-import { reports } from "../data/otcheti.js";
-import { socialService } from "../data/socialnoe-obsluzhivanie-page.js";
-import { socialLinks } from "../data/social-nets.js";
-import { news } from "../data/novosti.js";
-import { partnersData } from "../data/partners.js";
-import { menuLinksArr } from "../data/header-menu.js";
-import { projectsData } from "../data/our-projects.js";
-import {
+const documents = require("../data/documenti.js");
+const reports = require("../data/otcheti.js");
+const socialService = require("../data/socialnoe-obsluzhivanie-page.js");
+const socialLinks = require("../data/social-nets.js");
+const news = require("../data/novosti.js");
+const partnersData = require("../data/partners.js");
+const menuLinksArr = require("../data/header-menu.js");
+const projectsData = require("../data/our-projects.js");
+const {
   picArray,
   picArrayNews,
   breakpoints,
   newsBreakpoints,
-} from "../data/swiper-config.js";
-import { cardInfoList } from "../data/supprot-cards.js";
+} = require("../data/swiper-config.js");
+const cardInfoList = require("../data/supprot-cards.js");
+const viezdnyeProgrammyInfo = require("../data/viezdnye-programmy.js");
+const projectList = require("../data/menu-our-project.js");
 
-export const routes = (app) => {
+const routes = (app) => {
+  app.get("/menu-our-project", (request, response) => {
+    response.json(projectList);
+  });
+
+  app.get("/viezdnye-programmy", (request, response) => {
+    response.json(viezdnyeProgrammyInfo);
+  });
+
   app.get("/swiper", (request, response) => {
     response.json([picArray, picArrayNews, breakpoints, newsBreakpoints]);
   });
@@ -55,3 +65,5 @@ export const routes = (app) => {
     response.json(partnersData);
   });
 };
+
+module.exports = routes;

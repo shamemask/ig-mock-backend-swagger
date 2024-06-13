@@ -3,7 +3,10 @@
     "dotenv": "^16.4.5",
     "express": "^4.19.2"
   },
-  "type": "module",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/AlexanderBykovskiy/ig-mock-backend.git"
+  },
   "name": "ig-mock-backend",
   "version": "1.0.0",
   "main": "index.js",

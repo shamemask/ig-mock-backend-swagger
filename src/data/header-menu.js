@@ -1,29 +1,14 @@
-export const menuLinksArr = [
+const menuLinksArr = [
   {
     title: "Наши проекты",
     link: "/nashi-proekti/shkola-soprovozhdaemogo-prozhivaniya",
     children: [
-      {
-        title: "Школа сопровождаемого проживания",
-        link: "/nashi-proekti/shkola-soprovozhdaemogo-prozhivaniya",
-      },
-      {
-        title: "Трудовая реабилитация",
-        link: "/nashi-proekti/trudovaya-reabilitaciya",
-      },
-      {
-        title: "Волонтёрство для всех",
-        link: "/nashi-proekti/volonterstvo-dlya-vseh",
-      },
-      {
-        title: "Тренировочная квартира",
-        link: "/nashi-proekti/trenirovochnaya-kvartira",
-      },
-      {
-        title: "Выездные программы",
-        link: "/nashi-proekti/viezdnye-programmy",
-      },
-    ],
+      { title: "Школа сопровождаемого проживания", link: "/nashi-proekti/shkola-soprovozhdaemogo-prozhivaniya" },
+      { title: "Трудовая реабилитация", link: "/nashi-proekti/trudovaya-reabilitaciya" },
+      { title: "Волонтёрство для всех", link: "/nashi-proekti/volonterstvo-dlya-vseh" },
+      { title: "Тренировочная квартира", link: "/nashi-proekti/trenirovochnaya-kvartira" },
+      { title: "Выездные программы", link: "/nashi-proekti/viezdnye-programmy" },
+    ]
   },
   { title: "Социальное обслуживание", link: "/socialnoe-obsluzhivanie" },
   { title: "Новости", link: "/novosti" },
@@ -31,3 +16,5 @@ export const menuLinksArr = [
   { title: "Контакты", link: "/kontakti" },
   { title: "Поддержать", link: "/podderzhat" },
 ];
+
+module.exports = menuLinksArr;
