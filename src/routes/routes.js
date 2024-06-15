@@ -6,15 +6,11 @@ const news = require("../data/novosti.js");
 const partnersData = require("../data/partners.js");
 const menuLinksArr = require("../data/header-menu.js");
 const projectsData = require("../data/our-projects.js");
-const {
-  picArray,
-  picArrayNews,
-  breakpoints,
-  newsBreakpoints,
-} = require("../data/swiper-config.js");
+const picArray = require("../data/swiper.js");
 const cardInfoList = require("../data/supprot-cards.js");
 const viezdnyeProgrammyInfo = require("../data/viezdnye-programmy.js");
 const projectList = require("../data/menu-our-project.js");
+const breakpoints = require("../data/breakpoints.js");
 
 const routes = (app) => {
   app.get("/menu-our-project", (request, response) => {
@@ -26,7 +22,7 @@ const routes = (app) => {
   });
 
   app.get("/swiper", (request, response) => {
-    response.json([picArray, picArrayNews, breakpoints, newsBreakpoints]);
+    response.json(picArray);
   });
 
   app.get("/support-cards", (request, response) => {
@@ -63,6 +59,10 @@ const routes = (app) => {
 
   app.get("/partners", (request, response) => {
     response.json(partnersData);
+  });
+
+  app.get("/swiper/breakpoints", (request, response) => {
+    response.json(breakpoints);
   });
 };
 
