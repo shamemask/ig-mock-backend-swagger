@@ -11,6 +11,7 @@ const cardInfoList = require("../data/supprot-cards.js");
 const viezdnyeProgrammyInfo = require("../data/viezdnye-programmy.js");
 const projectList = require("../data/menu-our-project.js");
 const breakpoints = require("../data/breakpoints.js");
+const footerData = require("../data/footer.js");
 
 const routes = (app) => {
   app.get("/menu-our-project", (request, response) => {
@@ -63,6 +64,10 @@ const routes = (app) => {
 
   app.get("/swiper/breakpoints", (request, response) => {
     response.json(breakpoints);
+  });
+
+  app.get("/footer", (request, response) => {
+    response.json(footerData);
   });
 };
 
