@@ -97,7 +97,7 @@ const routes = (app) => {
 
 /**
  * @swagger
- * /pic-array:
+ * /swiper:
  *   get:
  *     summary: Get list of picture array items
  *     responses:
