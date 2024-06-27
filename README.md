@@ -6,20 +6,16 @@
 
 ## Запуск
 
-```npm start```
+```bash
+npm start
+```
 
 ## Доработка
 
-В папке ```/src/data``` создаем ```.js``` файлы с объектами, которые должен возвращать сервер и экспортируем для дальнейшего использования
+Настроен swagger
 
-В файле ```/src/routes/routes.js``` можно добавлять новые роуты и ответы сервера на них
+# запуск контейнера
 
-```js
-import { menuList } from "../data/menu.js";
-
-app.get('/main-menu', (request, response) => {
-        response.json(menuList);
-    });
+```bash
+docker build -t ig-mock-backend .
 ```
-
-где, ```get``` - метод запроса, ```/main-menu``` - роут эндпоинта, ```menuList``` - объект, который возвращает сервер

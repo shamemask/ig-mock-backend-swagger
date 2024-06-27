@@ -1,8 +1,10 @@
-require('dotenv').config();
+const dotenv = require('dotenv');
 const express = require('express');
-const path = require("node:path");
 const routes = require("./src/routes/routes.js");
 const cors = require('./src/middlewares/cors');
+
+const swaggerUi = require('swagger-ui-express');
+const swaggerSpec = require('./swaggerConfig.js');
 
 console.log("###", process.env.PORT);
 const app = express();
@@ -11,6 +13,10 @@ const port = process.env.PORT ?? 3000;
 app.use('/', express.static('./src/public'));
 
 app.use(cors);
+
+// Маршрут для Swagger UI
+app.use('/api-docs', swaggerUi.serve, swaggerUi.setup(swaggerSpec));
+
 
 routes(app);
 
@@ -21,3 +27,4 @@ app.listen(port, () => {
         second: "numeric"
     })}] Server started on a port ${port}`)
 })
+
