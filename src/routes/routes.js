@@ -228,7 +228,7 @@ const routes = (app) => {
 
 /**
  * @swagger
- * /social-links:
+ * /social-nets:
  *   get:
  *     summary: Get list of social links
  *     responses:
