@@ -271,7 +271,7 @@ const routes = (app) => {
 
 /**
  * @swagger
- * /projects:
+ * /our-projects:
  *   get:
  *     summary: Get list of projects
  *     responses:
