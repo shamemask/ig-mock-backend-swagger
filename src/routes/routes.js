@@ -152,7 +152,7 @@ const routes = (app) => {
 
 /**
  * @swagger
- * /card-info:
+ * /support-cards:
  *   get:
  *     summary: Get list of card information
  *     responses:
