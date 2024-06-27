@@ -377,7 +377,7 @@ const routes = (app) => {
 
 /**
  * @swagger
- * /social-service:
+ * /socialnoe-obsluzhivanie:
  *   get:
  *     summary: Get list of social service documents
  *     responses:
