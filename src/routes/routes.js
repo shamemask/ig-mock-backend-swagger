@@ -189,7 +189,7 @@ const routes = (app) => {
 
 /**
  * @swagger
- * /menu:
+ * /header-menu:
  *   get:
  *     summary: Get menu links
  *     responses:
